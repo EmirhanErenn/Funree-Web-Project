@@ -30,7 +30,7 @@
                     </svg>                                            
                     <div class="card__content">
                         <p class="card__title">Bilgi Yarışması</p>
-                        <p class="card__description">Heyecan dolu bir bilgi yarışması! Her doğru cevap +10 puan kazandırır! Katılmak için tıklayın!</p>
+                        <p class="card__description">Heyecan dolu bir bilgi yarışması! Her doğru cevap +10 puan kazandırır! Katılmak için tıklayınız!</p>
                     </div>
                 </div>
             </a>
