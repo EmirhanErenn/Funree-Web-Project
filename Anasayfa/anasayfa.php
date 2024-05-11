@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="style.css">
     <style>
     #userinfo {
-    position: relative;
+    position: absolute; /*önemli */
     top: 0;
-    right: 0;
-    margin: 2px;  /*Çakışma sebebiyle özel margin verildi.*/
+    right: 5px;
+    margin-left: auto;  /*Çakışma sebebiyle özel margin verildi.*/
 }
     </style>
 </head>
@@ -101,25 +101,27 @@
     </div>
         <button id="loginButton" class="button">
             <a href="Giris/loading.html" style="text-decoration: none;">Giriş Yap | Kayıt Ol</a>
-            <div class="arrow-wrapper">
+             <div class="arrow-wrapper"><!--Ok düzeltilecek -->
                 <div class="arrow"></div>
             </div>
         </button>
 <script src="script.js"></script>
 <!-----------------------------------------------------------------------------JAVASCRİPT KODLARI ----------------------------------------------------------------------------------------------------------->
         <script>
+            //ilk satır araştır
         document.addEventListener('DOMContentLoaded', function () {
         var loginButton = document.getElementById('loginButton');
+        //isset true or false döndürecek : bağlaç
         var isLoggedIn = <?php echo isset($_SESSION['user_id']) ? 'true' : 'false'; ?>;
 
-        // Kullanıcı giriş yapmışsa buton ve kart metinlerini güncelle
+        // Kullanıcı giriş yapmışsa buton ve kart metinlerini güncellemek için islogged değerinin true veya false old. kontorl et
         if (isLoggedIn) {
             loginButton.innerHTML = '<a href="#" onclick="confirmLogout()" style="text-decoration: none;">Çıkış Yap</a>';
         } else {
             loginButton.innerHTML = '<a href="Giris/giris.html" style="text-decoration: none;">Giriş Yap | Kayıt Ol</a>';
         }
     });
-
+    //soru sormak için
     function confirmLogout() {
         var confirmLogout = confirm("Çıkış yapmak istediğinize emin misiniz?");
         if (confirmLogout) {
