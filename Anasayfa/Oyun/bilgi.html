@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bilgi Yarışması Kuralları</title>
+<style>
+  body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('funree_game_bg.png');
+    background-size: auto 100%;
+    background-position: center;
+    font-family: Arial, sans-serif;
+  }
+  .container {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  h1 {
+    color: #333;
+  }
+  p {
+    color: #555;
+    margin-bottom: 20px;
+  }
+  .button-container {
+    display: flex;
+    justify-content: center;
+  }
+  .accept-button, .reject-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  .accept-button {
+    background-color: #4caf50;
+    color: #fff;
+    margin-right: 10px;
+    font-style: bold;
+  }
+  .reject-button {
+    background-color: #f44336;
+    color: #fff;
+    text-decoration: none;
+    font-style: bold;
+  }
+  .accept-button:hover, .reject-button:hover {
+    background-color: #3e8e41;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>Bilgi Yarışmamıza Hoşgeldiniz!</h1>
+  <p>Lütfen aşağıdaki kuralları okuyup aşağıdaki "Kabul Ediyorum" butonuna basın. İyi eğlenceler!</p>
+  <p>1-Her bir doğru cevap +10 Funree Puanı kazandırır.<br>
+  2-Her bir yanlış -5 Funree Puanı kaybettirir.<br>
+  3-Yarışma 5 dakika ile sınırlandırılmıştır. Bu süre içerisinde yarışmayı tamamlayamazsanız -10 Funree puanı kaybedersiniz..<br>
+  4-Önceki soruya dönme şansınız bulunmamaktadır.<br>
+  5-Bilgi yarışması oyunu her gün sadece 1 kere oynanabilir.</p>
+  <div class="button-container">
+    <form action="oyun.html">
+      <button type="submit" class="accept-button">Kabul Ediyorum</button>
+    </form>
+    <a href="../anasayfa.php" class="reject-button">Kabul Etmiyorum</a>
+  </div>
+</div>
+</body>
+</html>
